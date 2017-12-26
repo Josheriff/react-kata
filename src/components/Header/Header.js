@@ -6,7 +6,7 @@ import '../App/App.css';
 
 class Header extends Component {
     // data before render, make sense!
-    static PropTypes = {
+    static propTypes = {
         title: PropTypes.string.isRequired,
         dummy: PropTypes.array.isRequired
     }
