@@ -6,21 +6,16 @@ import './App.css';
 // Importing components
 
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer'
 
 class App extends Component {
   render() {
     return (
         <div className="App">
-            <div>
                 <Header/>
-            </div>
+                <Footer/>
 
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
 
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
       </div>
     );
   }

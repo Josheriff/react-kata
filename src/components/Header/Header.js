@@ -11,7 +11,8 @@ class Header extends Component {
           <h2>Welcome to React</h2>
         </header>
         <p className="App-intro">
-            Ok, this is the header component
+            Ok, this is the header component Using the CSS from APP,.
+            WHY NOT? (is this a new line???)
         </p>
       </div>
     );
