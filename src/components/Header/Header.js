@@ -12,11 +12,20 @@ class Header extends Component {
     }
     render() {
         console.log(this.props,'OEOEOEOEOEOEOE')
+        const {title, dummy} = this.props
+     /*         ^^^^   ^^^      ^^^^
+         JUST SINTACTIC SUGAR OF THIS LINES:
+
+        const title = {title: this.props.title}
+        const dummy = {dummy: this.props.dummy}
+
+             */
+        console.log(dummy)
     return (
       <div className="Header">
         <header className="Logo">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <h2>Welcome to React {title} </h2>
         </header>
         <p className="App-intro">
             Ok, this is the header component Using the CSS from APP,.

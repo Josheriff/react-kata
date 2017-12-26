@@ -1,5 +1,40 @@
 React Kata started with Create React App, and VIM as editor
 
+Just some things to not forget
+
+- In the root of my src folder we let the index.js
+  - In that index.js  ReactDOM.render(<App />, document.getElementById('root'));
+    - The root id is referencing the div with that id into ' /public/index.html '
+    - <App /> is refering a react component we created.
+
+- In src/components/App/ we have our App component wich we are using to:
+  - Import and paint the rest of the components
+  - Import and pass the PropTypes
+    - First we need to install "prop-types" -> npm install --s prop-types
+    - We are importing the values from a js-file but could be a request with real data.
+    - We pass the PropTypes like this:  <Header title="testing" dummy={dummy}/>
+    - <NameOfTheComponent title="titleOfTheObject" data={ImportedDataAtTheBegenning}/>
+
+- In src/components/Header/ we have the Header component:
+  - We used it to demostrate we can import components and use them
+  - We used it to demostrate we can pass properties from other components by:
+
+```
+     console.log(this.props,'OEOEOEOEOEOEOE')
+        const {title, dummy} = this.props
+     /*         ^^^^   ^^^      ^^^^
+         JUST SINTACTIC SUGAR OF THIS LINES:
+
+        const title = {title: this.props.title}
+        const dummy = {dummy: this.props.dummy}
+
+             */
+      console.log(dummy)
+ ```
+
+--------------------------------------------------------------------------------------------------------
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
