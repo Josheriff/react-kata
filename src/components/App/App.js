@@ -6,13 +6,17 @@ import './App.css';
 // Importing components
 
 import Header from '../Header/Header';
-import Footer from '../Footer/Footer'
+import Footer from '../Footer/Footer';
+
+// Importing Dummy Data
+
+import dummy from '../../dummyData/data.js'
 
 class App extends Component {
   render() {
     return (
         <div className="App">
-                <Header/>
+                <Header title="testing" dummy={dummy}/>
                 <Footer/>
       </div>
     );

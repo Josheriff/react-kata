@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types'; // Accesing another component data
+
 import logo from '../images/logo.svg';
 import '../App/App.css';
 
 class Header extends Component {
-  render() {
+    // data before render, make sense!
+    static PropTypes = {
+        title: PropTypes.string.isRequired,
+        dummy: PropTypes.array.isRequired
+    }
+    render() {
+        console.log(this.props,'OEOEOEOEOEOEOE')
     return (
       <div className="Header">
         <header className="Logo">
