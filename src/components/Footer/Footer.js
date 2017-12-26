@@ -7,7 +7,7 @@ class Footer extends Component {
     return (
       <div>
           <h2>Bye bye React</h2>
-          <img src={logo} ClassName="bot-image"  alt="foot massage" />
+          <img src={logo} alt="foot massage" />
 
           <p className="App-Goodbye">
             Now we are importing the footer component and saying bye bye
