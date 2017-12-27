@@ -6,6 +6,7 @@ import './App.css';
 
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import BodyContent from '../BodyContent/bodyContent'
 
 // Importing Dummy Data
 
@@ -17,6 +18,7 @@ class App extends Component {
         <div className="App">
                 <Header title="testing" dummy={dummy}/>
                 <Footer/>
+                <BodyContent/>
       </div>
     );
   }
