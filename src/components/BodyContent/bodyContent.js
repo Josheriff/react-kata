@@ -14,7 +14,8 @@ class Content extends Component {
 
     return (
       <div className="Content">
-        {body}
+          EL CONTENT CHAVAL!!
+          {body}
       </div>
     );
   }
