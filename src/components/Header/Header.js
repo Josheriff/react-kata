@@ -31,6 +31,9 @@ class Header extends Component {
             Ok, this is the header component Using the CSS from APP,.
             WHY NOT? (is this a new line???)
         </p>
+        <ul>
+            {dummy.map((item,key)=><li key={key}>{item.title}key:{key}</li>)}
+        </ul>
       </div>
     );
   }
